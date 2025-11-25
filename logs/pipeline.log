@@ -1,0 +1,34 @@
+2025-11-25 22:25:48,627 | INFO | equity_pipeline | === STEP 1: DATA INGESTION STARTED ===
+2025-11-25 22:25:48,627 | INFO | equity_pipeline | Loading CSV: C:\Users\Siddharth\Documents\Projects\equity_research_dashboard\sample_data\equity_prices_sample.csv
+2025-11-25 22:40:23,250 | INFO | equity_pipeline | === STEP 1: DATA INGESTION STARTED ===
+2025-11-25 22:40:23,251 | INFO | equity_pipeline | Loading CSV: C:\Users\Siddharth\Documents\Projects\equity_research_dashboard\sample_data\equity_prices_sample.csv
+2025-11-25 22:40:23,270 | INFO | equity_pipeline | Loaded 6000 rows x 4 cols from equity_prices_sample.csv
+2025-11-25 22:40:23,271 | INFO | equity_pipeline | Loading CSV: C:\Users\Siddharth\Documents\Projects\equity_research_dashboard\sample_data\macro_data_sample.csv
+2025-11-25 22:40:23,283 | INFO | equity_pipeline | Loaded 600 rows x 4 cols from macro_data_sample.csv
+2025-11-25 22:40:23,283 | INFO | equity_pipeline | Loading CSV: C:\Users\Siddharth\Documents\Projects\equity_research_dashboard\sample_data\company_metadata.csv
+2025-11-25 22:40:23,285 | INFO | equity_pipeline | Loaded 10 rows x 2 cols from company_metadata.csv
+2025-11-25 22:40:23,297 | INFO | equity_pipeline | Saved DataFrame (6000 rows x 4 cols) to C:\Users\Siddharth\Documents\Projects\equity_research_dashboard\output\01_raw\equity_raw.csv
+2025-11-25 22:40:23,300 | INFO | equity_pipeline | Saved DataFrame (600 rows x 4 cols) to C:\Users\Siddharth\Documents\Projects\equity_research_dashboard\output\01_raw\macro_raw.csv
+2025-11-25 22:40:23,302 | INFO | equity_pipeline | Saved DataFrame (10 rows x 2 cols) to C:\Users\Siddharth\Documents\Projects\equity_research_dashboard\output\01_raw\company_metadata_raw.csv
+2025-11-25 22:40:23,302 | INFO | equity_pipeline | === STEP 1: DATA INGESTION COMPLETED ===
+2025-11-25 22:40:23,948 | INFO | equity_pipeline | === STEP 2: DATA CLEANING STARTED ===
+2025-11-25 22:40:23,949 | INFO | equity_pipeline | Loading CSV: C:\Users\Siddharth\Documents\Projects\equity_research_dashboard\output\01_raw\equity_raw.csv
+2025-11-25 22:40:23,965 | INFO | equity_pipeline | Loaded 6000 rows x 4 cols from equity_raw.csv
+2025-11-25 22:40:23,966 | INFO | equity_pipeline | Loading CSV: C:\Users\Siddharth\Documents\Projects\equity_research_dashboard\output\01_raw\macro_raw.csv
+2025-11-25 22:40:23,978 | INFO | equity_pipeline | Loaded 600 rows x 4 cols from macro_raw.csv
+2025-11-25 22:40:23,978 | INFO | equity_pipeline | Loading CSV: C:\Users\Siddharth\Documents\Projects\equity_research_dashboard\output\01_raw\company_metadata_raw.csv
+2025-11-25 22:40:23,987 | INFO | equity_pipeline | Loaded 10 rows x 2 cols from company_metadata_raw.csv
+2025-11-25 22:40:24,020 | INFO | equity_pipeline | Saved DataFrame (6000 rows x 4 cols) to C:\Users\Siddharth\Documents\Projects\equity_research_dashboard\output\02_clean\equity_clean.csv
+2025-11-25 22:40:24,023 | INFO | equity_pipeline | Saved DataFrame (600 rows x 4 cols) to C:\Users\Siddharth\Documents\Projects\equity_research_dashboard\output\02_clean\macro_clean.csv
+2025-11-25 22:40:24,024 | INFO | equity_pipeline | Saved DataFrame (10 rows x 2 cols) to C:\Users\Siddharth\Documents\Projects\equity_research_dashboard\output\02_clean\company_metadata_clean.csv
+2025-11-25 22:40:24,024 | INFO | equity_pipeline | === STEP 2: DATA CLEANING COMPLETED ===
+2025-11-25 22:40:24,609 | INFO | equity_pipeline | === STEP 3: MERGE + ANOMALY DETECTION STARTED ===
+2025-11-25 22:40:24,609 | INFO | equity_pipeline | Loading CSV: C:\Users\Siddharth\Documents\Projects\equity_research_dashboard\output\02_clean\equity_clean.csv
+2025-11-25 22:40:24,625 | INFO | equity_pipeline | Loaded 6000 rows x 4 cols from equity_clean.csv
+2025-11-25 22:40:24,625 | INFO | equity_pipeline | Loading CSV: C:\Users\Siddharth\Documents\Projects\equity_research_dashboard\output\02_clean\macro_clean.csv
+2025-11-25 22:40:24,639 | INFO | equity_pipeline | Loaded 600 rows x 4 cols from macro_clean.csv
+2025-11-25 22:40:24,639 | INFO | equity_pipeline | Loading CSV: C:\Users\Siddharth\Documents\Projects\equity_research_dashboard\output\02_clean\company_metadata_clean.csv
+2025-11-25 22:40:24,641 | INFO | equity_pipeline | Loaded 10 rows x 2 cols from company_metadata_clean.csv
+2025-11-25 22:40:24,647 | INFO | equity_pipeline | Running anomaly detection on price (window=20, z_threshold=3.0)
+2025-11-25 22:40:24,680 | INFO | equity_pipeline | Saved DataFrame (6000 rows x 9 cols) to C:\Users\Siddharth\Documents\Projects\equity_research_dashboard\output\03_merged\equity_macro_merged.csv
+2025-11-25 22:40:24,680 | INFO | equity_pipeline | === STEP 3: MERGE + ANOMALY DETECTION COMPLETED ===

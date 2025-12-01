@@ -111,24 +111,3 @@ Copy code
 # ✂️ **COPY UNTIL HERE ↑↑↑**
 
 ---
-
-# ✔ What to do now
-
-1. Open your `README.md` file in VS Code  
-2. Select everything (Ctrl + A)  
-3. Delete  
-4. Paste the copied content  
-5. Save (Ctrl + S)
-
-Your README is now fully ready for GitHub.
-
----
-
-If you want next:
-
-- **GitHub repo description**  
-- **Topics/tags to add**  
-- **CV bullet points** for this project  
-- **Second project (valuation-sensitivity engine)**
-
-Just tell me!

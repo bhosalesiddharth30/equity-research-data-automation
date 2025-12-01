@@ -56,8 +56,7 @@ equity_research_dashboard/
 │── requirements.txt
 └── README.md
 ▶️ Run the pipeline
-bash
-Copy code
+
 pip install -r requirements.txt
 
 python pipeline/data_ingestion.py
@@ -65,8 +64,6 @@ python pipeline/data_cleaning.py
 python pipeline/merge_equity_macro.py
 Final merged dataset will be generated at:
 
-bash
-Copy code
 output/03_merged/equity_macro_merged.csv
 📊 Excel Dashboard
 The Excel dashboard (in dashboard/equity_dashboard_template.xlsx) loads the
@@ -85,8 +82,6 @@ Macro overlays (interest rate, CPI)
 🖼 Screenshots
 Screenshots for README visualization are stored under:
 
-bash
-Copy code
 dashboard/screenshots/
     dashboard_overview.png
     filters_anomalies_view.png
@@ -105,9 +100,5 @@ Siddharth Sunil Bhosale
 This project is part of my financial analytics portfolio for research & modeling
 roles in global banks.
 
-yaml
-Copy code
-
-# ✂️ **COPY UNTIL HERE ↑↑↑**
-
 ---
+
